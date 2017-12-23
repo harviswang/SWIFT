@@ -1,0 +1,2 @@
+all:
+	swift string.swift
