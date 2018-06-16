@@ -9,3 +9,6 @@ print(shoppingList)
 /* empty array */
 let emptyArray = [String]()
 print(emptyArray)
+
+let payload: [UInt8] = [0x32, 0x33];
+print(String(describing: payload));

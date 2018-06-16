@@ -95,3 +95,20 @@ case let .failure(message):
 case let .date(time):
 	print("Date \(time)")
 }
+
+public enum MQTTQOS: UInt8, CustomStringConvertible {
+    case qos0 = 0
+    case qos1
+    case qos2
+
+    public var description: String {
+        switch self {
+            case .qos0: return "qos0"
+            case .qos1: return "qos1"
+            case .qos2: return "qos2"
+        }
+    }
+}
+
+let qos =  MQTTQOS.qos0;
+print(qos);

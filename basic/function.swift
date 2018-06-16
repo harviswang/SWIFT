@@ -13,6 +13,21 @@ func greet(_ person: String, on day: String) -> String {
 }
 print(greet("John", on: "Wednesday"))
 
+func greet(person: String, alreadyGreeted: Bool) -> String {
+	if alreadyGreeted {
+		return "Hello again \(person)."
+	} else {
+		return "Hello \(person)."
+	}
+}
+print(greet(person: "John", alreadyGreeted: true))
+
+/* functions without return values */
+func greet(person: String) {
+	print("Hello, \(person)!");
+}
+greet(person: "Dave");
+
 /* use a tuple to make a compound value */
 func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, sum: Int) {
 	var min = scores[0]
